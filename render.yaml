@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: searxng
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python searx/webapp.py"
+    plan: free
+    branch: main
