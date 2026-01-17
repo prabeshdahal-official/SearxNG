@@ -3,6 +3,6 @@ services:
     name: searxng
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "export PYTHONPATH=. && python searx/webapp.py"
+    startCommand: "export PYTHONPATH=. && export SEARXNG_SETTINGS_PATH=./settings.yml && python searx/webapp.py"
     plan: free
     branch: main
