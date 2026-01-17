@@ -1,1 +1,1 @@
-web: bash app.sh
+web: export PYTHONPATH=. && bash app.sh
